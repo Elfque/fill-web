@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #d8f7ff;
+  /* padding: 20px; */
+  /* overflow-x: hidden; */
+  font-family: Lexend Deca;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  background-color: #adefff80;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+}
+nav img {
+  height: 4rem;
+}
+ul {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1.5rem;
+  list-style: none;
+}
+section {
+  margin: 9rem auto;
+}
+.cont {
+  display: flex;
+  align-items: center;
+  /* gap: 15%; */
+  justify-content: space-between;
+  margin: 3rem;
+}
+.right {
+  font-size: 3.7rem;
+  font-weight: 400;
+  width: 45%;
+}
+.left {
+  background-color: #46bedc;
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+.left img {
+  height: 45vh;
+}
+
+/* about */
+.hold {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+.next,
+.prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  z-index: 4;
+}
+.next {
+  right: 3rem;
+}
+.prev {
+  left: 3rem;
+}
+
+.pics {
+  background-color: #46bedc;
+  padding: 0.4rem;
+  width: fit-content;
+  border-radius: 10px;
+  margin: 0 1rem;
+}
+.caro {
+  position: relative;
+  height: fit-content;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.about img {
+  height: 40vh;
+}
+
+/* title */
+.title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+.que {
+  font-weight: 900;
+}
+.faq {
+  width: 80%;
+  margin: auto;
+}
+.drop {
+  margin: 2rem auto;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+span {
+  font-size: 2rem;
+  margin-right: 1rem;
+  font-weight: 900;
+}
+
+/* ROADMAP */
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin: 2rem auto;
+  width: 90%;
+}
+.padd {
+  padding: 1rem;
+}
+.box {
+  position: relative;
+  border-radius: 2rem;
+  border: 3px solid #a9eeff;
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+.number {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 3px solid #a9eeff;
+}
+.phase {
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.box:nth-child(2),
+.box:nth-child(4) {
+  transform: translateY(2rem);
+}
+
+/* COLLAPSE */
+.drop .hey,
+.drop hr {
+  display: none;
+}
+.drop_button {
+  cursor: pointer;
+}
+.drop.active .hey,
+.drop.active hr {
+  display: block;
+}
+
+/* CAROUSEL */
