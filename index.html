@@ -2,15 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=s, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Risky Ricky</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="/slick-1.8.1/slick/slick-theme.css" /> -->
   </head>
 
   <body>
@@ -18,26 +16,33 @@
       <div class="logo">
         <img src="./pics_ricky/img/Elfque logo.png" alt="" />
       </div>
-      <ul>
+      <ul class="hide">
+        <img src="./pics_ricky//img/times.svg" alt="" class="close" />
         <li>Home</li>
         <li>About</li>
         <li>Roadmap</li>
         <li>FAQ</li>
         <li>Contact Us</li>
       </ul>
+      <div class="nav-button">
+        <img src="./pics_ricky/img/menu.svg" alt="" />
+      </div>
     </nav>
     <section>
       <div class="home">
         <div class="cont">
           <div class="right">
             After decades of chaos, Ricky set up a lab for kush gangs
-            <i>JOIN NOW</i>
+            <div>
+              <button class="join-btn">JOIN NOW</button>
+            </div>
           </div>
           <div class="left">
             <img src="/pics_ricky/mov.jpg" alt="" />
           </div>
         </div>
       </div>
+
       <div class="about">
         <div class="title">ABOUT</div>
         <div class="caro">
@@ -72,28 +77,71 @@
           </div>
         </div>
       </div>
+
+      <!-- TEAM -->
       <div class="team">
         <div class="title">TEAM</div>
         <div class="caro">
           <button class="prev1">&larr;</button>
           <button class="next1">&rarr;</button>
           <div class="pictures">
-            <img src="./pics_ricky/01.jpg" alt="" />
-            <img src="./pics_ricky/02.jpg" alt="" />
-            <img src="./pics_ricky/03.jpg" alt="" />
-            <img src="./pics_ricky/04.jpg" alt="" />
-            <img src="./pics_ricky/05.jpg" alt="" />
-            <img src="./pics_ricky/06.jpg" alt="" />
-            <img src="./pics_ricky/07.jpg" alt="" />
-            <img src="./pics_ricky/08.jpg" alt="" />
-            <img src="./pics_ricky/09.jpg" alt="" />
-            <img
-              src="./pics_ricky/253af345b45b12af1b92506a4f481997.jpg"
-              alt=""
-            />
+            <div>
+              <img src="./pics_ricky/01.jpg" alt="" />
+              <div>Lorem, ipsum.</div>
+              <div>Lorem, ipsum dolor.</div>
+            </div>
+            <div>
+              <img src="./pics_ricky/02.jpg" alt="" />
+              <div>Lorem, ipsum.</div>
+              <div>Lorem, ipsum dolor.</div>
+            </div>
+            <div>
+              <img src="./pics_ricky/03.jpg" alt="" />
+              <div>Lorem, ipsum.</div>
+              <div>Lorem, ipsum dolor.</div>
+            </div>
+            <div>
+              <img src="./pics_ricky/04.jpg" alt="" />
+              <div>Lorem, ipsum.</div>
+              <div>Lorem, ipsum dolor.</div>
+            </div>
+            <div>
+              <img src="./pics_ricky/05.jpg" alt="" />
+              <div>Lorem, ipsum.</div>
+              <div>Lorem, ipsum dolor.</div>
+            </div>
+            <div>
+              <img src="./pics_ricky/06.jpg" alt="" />
+              <div>Lorem, ipsum.</div>
+              <div>Lorem, ipsum dolor.</div>
+            </div>
+            <div>
+              <img src="./pics_ricky/07.jpg" alt="" />
+              <div>Lorem, ipsum.</div>
+              <div>Lorem, ipsum dolor.</div>
+            </div>
+            <div>
+              <img src="./pics_ricky/08.jpg" alt="" />
+              <div>Lorem, ipsum.</div>
+              <div>Lorem, ipsum dolor.</div>
+            </div>
+            <div>
+              <img src="./pics_ricky/09.jpg" alt="" />
+              <div>Lorem, ipsum.</div>
+              <div>Lorem, ipsum dolor.</div>
+            </div>
+            <div>
+              <img
+                src="./pics_ricky/253af345b45b12af1b92506a4f481997.jpg"
+                alt=""
+              />
+              <div>Lorem, ipsum.</div>
+              <div>Lorem, ipsum dolor.</div>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="map">
         <div class="title">ROADMAP</div>
         <div class="boxes">
@@ -148,8 +196,6 @@
           </div>
         </div>
       </div>
-
-      <!-- TEAM -->
 
       <!-- FAQ -->
       <div class="faq">
@@ -231,7 +277,6 @@
     </section>
     <!-- FOOTER -->
     <footer></footer>
-    <!-- <script src="./script/jquery.js"></script> -->
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
