@@ -58,9 +58,10 @@ section {
   display: grid;
   gap: 1rem;
   width: 100%;
-  /* overflow-x: hidden; */
 }
 .next,
+.next1,
+.prev1,
 .prev {
   position: absolute;
   top: 50%;
@@ -71,11 +72,13 @@ section {
   height: 2rem;
   z-index: 4;
 }
-.next {
-  right: 3rem;
+.next,
+.next1 {
+  right: -3rem;
 }
-.prev {
-  left: 3rem;
+.prev,
+.prev1 {
+  left: -3rem;
 }
 
 .pics {
@@ -179,4 +182,14 @@ span {
   display: block;
 }
 
-/* CAROUSEL */
+/* .pictures {
+  display: flex;
+  justify-content: space-between;
+  height: 25rem;
+} */
+.pictures img {
+  height: 20rem;
+  object-fit: cover;
+  margin: 0 1rem;
+  width: 35%;
+}
