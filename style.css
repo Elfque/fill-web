@@ -202,14 +202,13 @@ span {
 }
 
 .pictures img {
-  height: 10rem;
+  height: 12rem;
   object-fit: cover;
-  margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 .pictures > div {
-  margin: 0 1rem;
   text-align: center;
+  width: 100%;
 }
 
 .nav-button {
