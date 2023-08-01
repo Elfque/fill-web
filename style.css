@@ -15,7 +15,7 @@ nav {
   background-color: #adefff80;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 5;
   backdrop-filter: blur(10px);
 }
 nav img {
@@ -32,7 +32,7 @@ ul {
 .cont {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 4fr 5fr;
   margin: 3rem;
   padding: 2rem 0;
   gap: 2rem;
@@ -48,6 +48,7 @@ ul {
   background-color: #46bedc;
   font-weight: 700;
   cursor: pointer;
+  margin-top: 2rem;
 }
 .right {
   font-size: 3.7rem;
@@ -93,7 +94,7 @@ ul {
   border-radius: 100%;
   width: 2rem;
   height: 2rem;
-  z-index: 4;
+  z-index: 1;
 }
 .next,
 .next1 {
@@ -107,7 +108,6 @@ ul {
 .pics {
   background-color: #46bedc;
   padding: 0.4rem;
-  /* width: fit-content; */
   border-radius: 10px;
 }
 .caro {
@@ -189,16 +189,21 @@ span {
 
 /* COLLAPSE */
 .drop .hey,
-.drop hr {
+.drop hr,
+.minus {
   display: none;
 }
 .drop_button {
   cursor: pointer;
 }
 .drop.active .hey,
-.drop.active hr {
+.drop.active hr,
+.drop.active .minus {
   display: block;
   margin: 0.5rem 0;
+}
+.drop.active .plus {
+  display: none;
 }
 
 .pictures img {
