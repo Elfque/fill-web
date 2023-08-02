@@ -10,56 +10,83 @@ dropBtn.forEach((btn) => {
   });
 });
 
-$(".hold").slick({
-  // dots: true,
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  centerMode: true,
-  prevArrow: $(".prev"),
-  nextArrow: $(".next"),
-  responsive: [
-    {
-      breakpoint: 1000,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-});
+// $(".hold").slick({
+//   // dots: true,
+//   infinite: true,
+//   slidesToShow: 3,
+//   slidesToScroll: 3,
+//   centerMode: true,
+//   prevArrow: $(".prev"),
+//   nextArrow: $(".next"),
+//   responsive: [
+//     {
+//       breakpoint: 1000,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 2,
+//       },
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//       },
+//     },
+//   ],
+// });
 
-$(".pictures").slick({
-  // dots: true,
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  centerMode: true,
-  prevArrow: $(".prev1"),
-  nextArrow: $(".next1"),
-  responsive: [
-    {
-      breakpoint: 1000,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
+// $(".pictures").slick({
+//   // dots: true,
+//   infinite: true,
+//   slidesToShow: 3,
+//   slidesToScroll: 3,
+//   centerMode: true,
+//   prevArrow: $(".prev1"),
+//   nextArrow: $(".next1"),
+//   responsive: [
+//     {
+//       breakpoint: 1000,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 2,
+//       },
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//       },
+//     },
+//   ],
+// });
+const swiper = new Swiper(".swiper", {
+  speed: 1000,
+  spaceBetween: 40,
+  loop: true,
+  slidesPerView: 4,
+  autoplay: {
+    delay: 2000,
+  },
+  breakpoints: {
+    100: {
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 30,
     },
-  ],
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
 });
 
 navBtn.addEventListener("click", () => {
