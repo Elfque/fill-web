@@ -102,6 +102,7 @@ ul {
   text-align: start;
   margin: 0 0 1rem 0;
 }
+
 /* title */
 .title {
   text-align: center;
@@ -130,6 +131,9 @@ span {
 }
 
 /* ROADMAP */
+.map {
+  margin-top: 2rem;
+}
 .boxes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -174,21 +178,17 @@ span {
 
 /* COLLAPSE */
 .drop .hey,
-.drop hr,
-.minus {
+.drop hr {
   display: none;
 }
+
 .drop_button {
   cursor: pointer;
 }
 .drop.active .hey,
-.drop.active hr,
-.drop.active .minus {
+.drop.active hr {
   display: block;
   margin: 0.5rem 0;
-}
-.drop.active .plus {
-  display: none;
 }
 
 .pictures img {
@@ -254,13 +254,18 @@ footer {
   }
   .mission {
     grid-template-columns: 1fr;
+    gap: 1rem;
     text-align: center;
   }
   .mission .title {
     text-align: center;
+    margin-top: 0.5rem;
   }
   .mission > div:nth-child(1) {
     margin: 0 auto;
+  }
+  .main_cont {
+    font-size: 0.8rem;
   }
 }
 
