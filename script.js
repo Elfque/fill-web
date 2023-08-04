@@ -1,6 +1,7 @@
 const dropBtn = document.querySelectorAll(".drop_button");
 const navBtn = document.querySelector(".nav-button");
 const list = document.querySelector("nav ul");
+const listItem = document.querySelectorAll("nav ul li");
 const close = document.querySelector(".close");
 
 dropBtn.forEach((btn) => {
@@ -49,4 +50,10 @@ navBtn.addEventListener("click", () => {
 
 close.addEventListener("click", () => {
   list.classList.toggle("hide");
+});
+
+listItem.forEach((liste) => {
+  liste.addEventListener("click", () => {
+    list.classList.add("hide");
+  });
 });

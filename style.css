@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #d8f7ff;
   font-family: Lexend Deca;
@@ -328,4 +331,8 @@ footer {
   nav ul.hide {
     display: none;
   }
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
